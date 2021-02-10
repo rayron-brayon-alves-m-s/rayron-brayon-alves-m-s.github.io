@@ -1,0 +1,75 @@
+<!doctype html>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Meu Site</title>
+	<meta charset="utf-8"/>
+</head>
+
+
+<body>
+
+<h1>Cadastro</h1>
+
+<form action="http://191.252.62.149:8080/pweb/salvar.jsp" method="post" > 
+	
+	Login: <br/>
+	<input type="text" name="login"><br/>
+
+	Senha: <br/>
+	<input type="password" name="senha"><br/>
+
+	Confirme a senha: <br/>
+	<input type="password" name="ConfirmaSenha"><br/>
+
+	Nome:<br/>
+	<input type="text" name="nome"><br/>
+
+	Sexo:<br/>
+	<input type="radio" value="Masculino" name="sexo">Masculino<br/>
+	<input type="radio" value="Feminino" name="sexo">Feminino<br/>
+
+	Email:<br/>
+	<input type="email" name="Email"><br/>
+
+
+	Interesses:<br/>
+	<input type="checkbox" value="Futebol" name="Interesses">Futebol<br/>
+	<input type="checkbox" value="Politica" name="Interesses">Politica<br/>
+	<input type="checkbox" value="Economia" name="Interesses">Economia<br/>
+	<input type="checkbox" value="Carros" name="Interesses">Carros<br/>
+	<input type="checkbox" value="Celebridades" name="Interesses">Celebridades<br/>
+
+	Estado:<br/>
+	<select name="Estado">
+		<option value="" selected >Selecione o Estado </option>
+		<option value="PI">Piauí </option>
+		<option value="CE" >Ceará</option>
+		<option value="MA"> Maranhão</option>
+
+
+	</select><br/>
+
+	Observações: <br/>
+	<textarea cols="100" name = "observacao">Digite algo aqui</textarea><br/>
+
+	<br/>
+
+
+
+
+
+<input type="submit" value="Enviar">
+
+
+
+
+</form>
+
+
+</body>
+
+
+
+</html>
