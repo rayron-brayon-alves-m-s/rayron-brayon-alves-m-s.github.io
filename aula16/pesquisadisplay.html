@@ -1,0 +1,207 @@
+<!doctype html>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Meu Site</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<a href="segundoexemploaula16.html">Link para Segundo Exemplo (Aula 16) </a>
+
+
+<a href="index.html">Voltar ao Principal </a>
+
+	<style type="text/css">
+
+
+		body{
+			background: #d6d6d6;
+		}
+           body{width:100%; 
+			height:100%;}
+		
+
+
+		#mainmenu{
+			border: 2px;
+			background: #B22222;
+			padding: 3px;
+			height: 150px;
+			
+			
+			margin: auto top;
+		}
+
+#texto{
+			
+			padding: 3px;
+			border: 2px;
+	
+			height: 80px;
+			background: #1E90FF;
+			width: 50%;
+			display: inline-block;
+			
+			
+			
+			
+		}
+
+
+		
+
+
+
+	</style>
+
+
+</head>
+
+
+<body>
+	
+<div id="texto">
+	
+<h1>Pesquisa Sobre Display</h1> <br/>
+
+<p>
+	Display é a propriedade mais importante do CSS para controlar o layout. Cada elemento tem um valor padrão para o display dependendo de seu tipo. O valor padrão na maioria dos elementos é normalmente block ou inline. Um elemento com valor block é chamado de elemento de nível de bloco ou apenas elemento de bloco. Um elemento com valor inline é sempre chamado de elemento de linha.
+	<br/>
+	<br/>
+Block
+<br/>
+<div>
+div é o exemplo de bloco mais comum. O elemento de bloco sempre começa em uma nova linha e se expande pra esquerda e direita o tanto quanto for possível. Outros elementos de bloco comuns são p e form, e agora no HTML5 temos: header, footer, section e outros.
+</div>
+<br/>
+<br/>
+Inline
+<br/>
+<br/>
+span é o elemento de linha padrão. Um elemento de linha pode preencher algum texto dentro de um parágrafo <span> como esse </span> sem quebrar o fluxo daquele parágrafo. O elemento a é o elemento de linha mais comum, já que ele é utilizado para links.
+<br/>
+<br/>
+None
+<br/>
+<br/>
+Outro valor comum do display é o none. Alguns elementos específicos como o script utilizam este valor por padrão. Ele é normalmente utilizado através do JavaScript para esconder e exibir elementos sem realmente os remover nem recriar.
+Ele é bem diferente de visibility. Marcando o display com o valor none vai exibir a página como se o elemento não existisse. Com visibility:hidden o elemento fica invisível, porém ele permanece ocupando o espaço em que estaria totalmente visível.
+<br/>
+<br/>
+Outros valores da propriedade display
+<br/>
+<br/>
+Existem vários outros valores diferentes para o display, tais como: list-item e table. Ainda vamos discutir sobre inline-block e flex mais adiante.
+<br/>
+<br/>
+Bônus
+<br/>
+<br/>
+Como mencionei, cada elemento possui um tipo padrão de display. No entanto, você sempre poderá substituí-los! Embora não faça sentido uma div no modo de linha, você pode fazer isso para personalizar a visualização de elementos com semânticas particulares. Um exemplo comum é aplicar display:inline no elemento li para menus horizontais.
+<br/>
+<br/>
+
+Display: list-item
+<br/>
+Não é suportada pelo Internet Explorer 5 Windows.
+<br/>
+
+A propriedade display: list-item faz com que o elemento HTML seja renderizado como um item de lista, isto significa que aparecerá um marcador (bullet) na frente de cada item (tal como acontece com o elemento UL), exceto para o Internet Explorer 5 para Mac que renderiza um número no lugar de um marcador (tal como acontece com o elemento OL). A numeração neste caso apresenta um bug: todos os itens de lista porventura existentes na página contam e em consequência a numeração inicia-se a partir daquela contagem.
+<br/>
+Live example:
+display: block
+display: list-item
+display: list-item
+<br/>
+<br/>
+Display: run-in
+<br/>
+<br/>
+Suportada pelo Ópera 5+ e com restrições pelo Internet Explorer 5 para Mac.
+Suportada de forma incorreta pelo Safari 1.3.2: no segundo exemplo o box inline deve permanecer abaixo do box run-in.
+
+Definição de display: run-in segundo o W3C:
+"Se um box nível de bloco (que não seja flutuado ou absolutamente posicionado) segue-se a um box run-in este torna-se o primeiro box inline do box nível de bloco.
+Caso contrário, o box run-in é um box nível de bloco."
+<br/>
+<br/>
+
+Pergunta: Para que você precisa disto?
+<br/>
+
+De qualquer maneira, o navegador Ópera é o único que realmente suporta esta propriedade. Ela remove o padding-top e padding-bottom do box run-in embora isto não esteja previsto pelo W3C.
+Internet Explorer 5 para Mac indenta o box run-in. Eu não tenho a mínima idéia porque ele faz isto.
+<br/>
+<br/>
+Exemplo:
+display: block
+display: run-in
+display: block
+display: run-in
+display: inline
+<br/>
+<br/>
+
+Exemplo de display: run-in
+display: compact
+Suportada pelo Ópera. Bug no Safari e iCab.
+<br/>
+<br/>
+Definição de display: compact segundo o W3C:
+"Se um box nível de bloco (que não seja flutuado ou absolutamente posicionado) segue-se a um box compact este será formatado como um one-line inline box. [...com suas peculiaridades de margens...]
+Caso contrário, o box compact é um box nível de bloco."
+<br/>
+<br/>
+
+O box compacto será posicionado à esquerda do bloco que lhe segue sempre que houver espaço suficiente para isto. No segundo exemplo da figura a seguir, para o terceiro bloco foi definida uma margen esquerda com tamanho suficiente para deixar espaço para o box compacto. Para o primeiro exemplo na mesma figura, não foi definida uma margem e em consequência não há espaço para o bloco compacto e assim ele foi renderizado como um bloco.
+<br/>
+<br/>
+
+Exemplo:
+display: block
+display: compact
+display: block
+display: compact
+display: block; margin-left: 12em
+<br/>
+<br/>
+
+
+Display: Table
+<br/>
+<br/>
+Não é suportada pelo Internet Explorer.
+
+O navegador Safari precisa de elementos com declaração display: table e display: table-row para mostrar as células corretamente.
+<br/>
+O navegador iCab não mostra o texto 'display: table-row'.
+<br/>
+
+A declaração display: table faz com que o elemento HTML seja renderizado como tabela. Elementos aninhados devem ser renderizados como table-row e table-cell, tal como nossas velhas conhecidas TR's e TD's. Existe também a declaração display: table-column que não tem qualquer influência na renderização servindo apenas como uma informação tal como o elemento COL.
+
+
+
+
+
+
+</p>
+
+</br>
+</br>
+
+</br>
+
+</br>
+
+
+
+
+</div>
+
+	
+
+</body>
+
+
+
+</html>
