@@ -1,0 +1,47 @@
+<!doctype html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<link href="estilo.css" rel="stylesheet">
+
+
+	<title> Links </title>
+	<meta charset="utf-8"/>
+<script type="text/javascript">
+	function mostravalor (componente){
+		var valor = componente.getAttribute("data-idade");
+		alert(valor);
+	}
+
+
+
+</script>
+
+
+
+
+
+
+</head>
+
+
+<body>
+	<div>
+		<ul>
+		<li class="pessoa1" onclick="mostravalor(this)"data-idade="" >  João</li>
+		<li class="pessoa2" onclick="mostravalor(this)"data-idade=""> José</li>
+		<li class="pessoa3" onclick="mostravalor(this)"data-idade=""> Maria</li>
+	</ul>
+
+	</div>
+
+
+
+
+
+</body>
+
+
+
+</html>

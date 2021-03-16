@@ -1,0 +1,57 @@
+
+
+	.pessoa1{
+		color:red;
+	
+
+	}
+	.pessoa1[data-idade='20']{
+		color: red;
+	}
+
+	.pessoa1::before{
+		content: 'Nome: ';
+	}
+
+	.pessoa1::after {
+		content: ' - Idade: 20 Anos - CPF:999'  attr(data-idade) attr(data-cpf) ;
+	}
+
+
+	
+.pessoa2{
+	color:blue;
+}
+
+	.pessoa2[data-idade='30']  {
+		color:blue;
+	}
+
+	.pessoa2::before{
+		content: 'Nome:  ';
+	}
+
+	.pessoa2::after {
+		content: ' - Idade: 30 Anos - CPF:888'  attr(data-idade) attr(data-cpf);
+	}
+
+	.pessoa3{
+	color:red;
+}
+
+.pessoa3[data-idade='40']  {
+		color: red;
+	}
+
+.pessoa3::before{
+		content: 'Nome:  ';
+	}
+
+	.pessoa3::after {
+		content: ' - Idade: 40 Anos - CPF:777' attr(data-idade) attr(data-cpf);
+	}
+
+
+
+
+
